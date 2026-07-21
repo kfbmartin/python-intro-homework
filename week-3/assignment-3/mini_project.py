@@ -1,4 +1,4 @@
-day = input("What day is it? ").capitalize()
+day = input("What day is it? ").lower()
 
 if day=="Sunday":
     timeOfDay = input("What time of day? ").lower()
