@@ -19,5 +19,5 @@ if number !=0 and number%2 == 0:
 elif number !=0 and number%2 !=0:
     print(f"{number} is odd.")
 
-elif number ==0:
+else:
     print(f"{number} is even.")
