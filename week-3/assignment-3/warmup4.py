@@ -10,7 +10,7 @@ elif number< 0:
 
 else:
     print(f"{number} is zero.")
-    print(f"{number} is even."
+  
 
 # if/elif/else statement 2 for parity including zero
 
@@ -20,4 +20,5 @@ if number !=0 and number%2 == 0:
 elif number !=0 and number%2 !=0:
     print(f"{number} is odd.")
 
-    )
+elif number == 0:
+    print(f"{number} is even.")
