@@ -9,6 +9,6 @@ elif age>=13 and age<=17:
 elif age>=18 and age<=64:
     #print(f"Your age is {age}.")
     print("You are an Adult.")
-else:
+elif age>=65 and age<=125:
     #print(f"Your age is {age}.")
     print("You are a Senior.")
