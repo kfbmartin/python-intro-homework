@@ -8,6 +8,8 @@ if day=="Sunday":
         print("Suggestion: It's time for lunch.")
     elif(timeOfDay == "evening"):
         print("Suggestion: Good evening, it's time to make dinner!")
+    else:
+        print(f"Sorry, I don't recognize that time of day. Try: morning, afternoon or evening for the time of day on {day}.")
 
 
 elif day=="Monday":
@@ -17,7 +19,8 @@ elif day=="Monday":
         print("Suggestion: Good afternoon, it's a great time to read a book!")
     elif(timeOfDay == "evening"):
         print("Suggestion: Good evening, it's a great time to go to a friend's house.")
-
+    else:
+        print(f"Sorry, I don't recognize that time of day. Try: morning, afternoon or evening for the time of day on {day}.")
     
 elif day=="Tuesday":
     if(timeOfDay =='morning'):
@@ -26,7 +29,8 @@ elif day=="Tuesday":
         print("Suggestion: Good afternoon, it's a great time to go to lunch!")
     elif(timeOfDay == "evening"):
         print("Suggestion: Good evening, it's a great time to go to the gym!")
-
+    else:
+        print(f"Sorry, I don't recognize that time of day. Try: morning, afternoon or evening for the time of day on {day}.")
 
 elif day=="Wednesday":
     if(timeOfDay =='morning'):
@@ -35,7 +39,8 @@ elif day=="Wednesday":
         print("Suggestion: Good afternoon, it's a great time to go to the grocery store.")
     elif(timeOfDay == "evening"):
         print("Suggestion: Good evening, it's a great time to a restaurant!")
-
+    else:
+        print(f"Sorry, I don't recognize that time of day. Try: morning, afternoon or evening for the time of day on {day}.")
 
 elif day=="Thursday":
     if(timeOfDay =='morning'):
@@ -44,7 +49,8 @@ elif day=="Thursday":
          print("Suggestion: Good afternoon, it's a great time to go to the post office.")
     elif(timeOfDay == "evening"):
         print("Suggestion: Good evening, it's a great time to walk the dog!!")
-
+    else:
+        print(f"Sorry, I don't recognize that time of day. Try: morning, afternoon or evening for the time of day on {day}.")
 
 elif day=="Friday":
     if(timeOfDay =='morning'):
@@ -53,7 +59,8 @@ elif day=="Friday":
          print("Suggestion: Good afternoon, it's a great time to play Ping Pong.")
     elif(timeOfDay == "evening"):
         print("Suggestion: Good evening, it's a great time to watch TV!")
-
+    else:
+        print(f"Sorry, I don't recognize that time of day. Try: morning, afternoon or evening for the time of day on {day}.")
 
 elif day=="Saturday":
     if(timeOfDay =='morning'):
@@ -62,6 +69,11 @@ elif day=="Saturday":
          print("Suggestion: Good afternoon, it's a great time to go for Ice Cream!")
     elif(timeOfDay == "evening"):
         print("Suggestion: Good evening, it's a great time to watch a movie!")
-
+    else:
+        print(f"Sorry, I don't recognize that time of day. Try: morning, afternoon or evening for the time of day on {day}.")
 else:
     print("Sorry, I don't recognize that day. Try: Monday, Tuesday, Wednesday...")
+
+    if(timeOfDay != 'morning' or 'afternoon' or 'evening'):
+        print("Sorry, I don't recognize that time of day. Try: morning, afternoon or evening.")
+
