@@ -13,11 +13,9 @@ else:
 
 # if/elif/else statement 2 for parity including zero
 
-if number !=0 and number%2 == 0:
+if number%2 == 0:
     print(f"{number} is even.")
 
-elif number !=0 and number%2 !=0:
+elif number%2 !=0:
     print(f"{number} is odd.")
 
-elif number ==0:
-    print(f"{number} is even.")
