@@ -46,7 +46,7 @@ elif day=="wednesday":
     else:
         print(f"Sorry, I don't recognize that time of day. Try: morning, afternoon or evening for the time of day.")
 
-elif day=="Thursday":
+elif day=="thursday":
     timeOfDay = input("What time of day? ").lower()
 
     if(timeOfDay =='morning'):
