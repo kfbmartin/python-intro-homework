@@ -1,6 +1,6 @@
 day = input("What day is it? ").lower()
 
-if day=="Sunday":
+if day=="sunday":
     timeOfDay = input("What time of day? ").lower()
     if(timeOfDay == "morning"):
         print("Suggestion: Good Morning, it's a great time to go for a walk!")
@@ -9,11 +9,10 @@ if day=="Sunday":
     elif(timeOfDay == "evening"):
         print("Suggestion: Good evening, it's time to make dinner!")
     else:
-        print(f"Sorry, I don't recognize that time of day. Try: morning, afternoon or evening for the time of day on {day}.")
+        print(f"Sorry, I don't recognize that time of day. Try: morning, afternoon or evening for the time of day.")
 
-elif day=="Monday":
+elif day=="monday":
     timeOfDay = input("What time of day? ").lower()
-
     if(timeOfDay =='morning'):
         print("Suggestion: Morning, it's a great time to make Pancakes for Breakfast!")
     elif(timeOfDay == "afternoon"):
@@ -21,9 +20,9 @@ elif day=="Monday":
     elif(timeOfDay == "evening"):
         print("Suggestion: Good evening, it's a great time to go to a friend's house.")
     else:
-        print(f"Sorry, I don't recognize that time of day. Try: morning, afternoon or evening for the time of day on {day}.")
+        print(f"Sorry, I don't recognize that time of day. Try: morning, afternoon or evening for the time of day.")
         
-elif day=="Tuesday":
+elif day=="tuesday":
     timeOfDay = input("What time of day? ").lower()
 
     if(timeOfDay =='morning'):
@@ -33,9 +32,9 @@ elif day=="Tuesday":
     elif(timeOfDay == "evening"):
         print("Suggestion: Good evening, it's a great time to go to the gym!")
     else:
-        print(f"Sorry, I don't recognize that time of day. Try: morning, afternoon or evening for the time of day on {day}.")
+        print(f"Sorry, I don't recognize that time of day. Try: morning, afternoon or evening for the time of day.")
 
-elif day=="Wednesday":
+elif day=="wednesday":
     timeOfDay = input("What time of day? ").lower()
 
     if(timeOfDay =='morning'):
@@ -45,7 +44,7 @@ elif day=="Wednesday":
     elif(timeOfDay == "evening"):
         print("Suggestion: Good evening, it's a great time to a restaurant!")
     else:
-        print(f"Sorry, I don't recognize that time of day. Try: morning, afternoon or evening for the time of day on {day}.")
+        print(f"Sorry, I don't recognize that time of day. Try: morning, afternoon or evening for the time of day.")
 
 elif day=="Thursday":
     timeOfDay = input("What time of day? ").lower()
@@ -57,9 +56,9 @@ elif day=="Thursday":
     elif(timeOfDay == "evening"):
         print("Suggestion: Good evening, it's a great time to walk the dog!!")
     else:
-        print(f"Sorry, I don't recognize that time of day. Try: morning, afternoon or evening for the time of day on {day}.")
+        print(f"Sorry, I don't recognize that time of day. Try: morning, afternoon or evening for the time of day.")
 
-elif day=="Friday":
+elif day=="friday":
     timeOfDay = input("What time of day? ").lower()
 
     if(timeOfDay =='morning'):
@@ -69,9 +68,9 @@ elif day=="Friday":
     elif(timeOfDay == "evening"):
         print("Suggestion: Good evening, it's a great time to watch TV!")
     else:
-        print(f"Sorry, I don't recognize that time of day. Try: morning, afternoon or evening for the time of day on {day}.")
+        print(f"Sorry, I don't recognize that time of day. Try: morning, afternoon or evening for the time of day.")
 
-elif day=="Saturday":
+elif day=="saturday":
     timeOfDay = input("What time of day? ").lower()
 
     if(timeOfDay =='morning'):
@@ -81,7 +80,7 @@ elif day=="Saturday":
     elif(timeOfDay == "evening"):
         print("Suggestion: Good evening, it's a great time to watch a movie!")
     else:
-        print(f"Sorry, I don't recognize that time of day. Try: morning, afternoon or evening for the time of day on {day}.")
+        print(f"Sorry, I don't recognize that time of day. Try: morning, afternoon or evening for the time of day.")
 else:
     print("Sorry, I don't recognize that day. Try: Monday, Tuesday, Wednesday...")
 

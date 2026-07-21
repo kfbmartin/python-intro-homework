@@ -1,4 +1,4 @@
-score = 54
+score = int(input("Pick any number between 0 and 100: "))
 
 if score >= 90 and score <=100:
     print(f"Score: {score}")
