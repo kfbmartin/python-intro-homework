@@ -1,7 +1,9 @@
 day = input("What day is it? ").lower()
+timeOfDay = input("What time of day? ").lower()
+
 
 if day=="sunday":
-    timeOfDay = input("What time of day? ").lower()
+    #timeOfDay = input("What time of day? ").lower()
     if(timeOfDay == "morning"):
         print("Suggestion: Good Morning, it's a great time to go for a walk!")
     elif(timeOfDay == "afternoon"):
@@ -12,7 +14,7 @@ if day=="sunday":
         print(f"Sorry, I don't recognize that time of day. Try: morning, afternoon or evening for the time of day.")
 
 elif day=="monday":
-    timeOfDay = input("What time of day? ").lower()
+    #timeOfDay = input("What time of day? ").lower()
     if(timeOfDay =='morning'):
         print("Suggestion: Morning, it's a great time to make Pancakes for Breakfast!")
     elif(timeOfDay == "afternoon"):
@@ -23,7 +25,7 @@ elif day=="monday":
         print(f"Sorry, I don't recognize that time of day. Try: morning, afternoon or evening for the time of day.")
         
 elif day=="tuesday":
-    timeOfDay = input("What time of day? ").lower()
+    #timeOfDay = input("What time of day? ").lower()
 
     if(timeOfDay =='morning'):
         print("Suggestion: Morning, it's a great time to go to a Cafe for Breakfast!")
@@ -35,7 +37,7 @@ elif day=="tuesday":
         print(f"Sorry, I don't recognize that time of day. Try: morning, afternoon or evening for the time of day.")
 
 elif day=="wednesday":
-    timeOfDay = input("What time of day? ").lower()
+    #timeOfDay = input("What time of day? ").lower()
 
     if(timeOfDay =='morning'):
         print("Suggestion: Morning, it's a great time to go for a run!")
@@ -47,7 +49,7 @@ elif day=="wednesday":
         print(f"Sorry, I don't recognize that time of day. Try: morning, afternoon or evening for the time of day.")
 
 elif day=="thursday":
-    timeOfDay = input("What time of day? ").lower()
+    #timeOfDay = input("What time of day? ").lower()
 
     if(timeOfDay =='morning'):
         print("Suggestion: Morning, it's a great time to have coffee!")
@@ -59,7 +61,7 @@ elif day=="thursday":
         print(f"Sorry, I don't recognize that time of day. Try: morning, afternoon or evening for the time of day.")
 
 elif day=="friday":
-    timeOfDay = input("What time of day? ").lower()
+    #timeOfDay = input("What time of day? ").lower()
 
     if(timeOfDay =='morning'):
         print("Suggestion: Morning, it's a great time to exercise!")
@@ -71,7 +73,7 @@ elif day=="friday":
         print(f"Sorry, I don't recognize that time of day. Try: morning, afternoon or evening for the time of day.")
 
 elif day=="saturday":
-    timeOfDay = input("What time of day? ").lower()
+    #timeOfDay = input("What time of day? ").lower()
 
     if(timeOfDay =='morning'):
         print("Suggestion: Morning, it's a great time watch the news!")

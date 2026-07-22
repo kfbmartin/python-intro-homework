@@ -1,5 +1,6 @@
-age = int(input("Enter your age:"))
+#age = int(input("Enter your age:"))
 
+age = 54
 if age>=0 and age<=12:
     #print(f"Your age is {age}.")
     print("You are a Child.")
@@ -9,6 +10,7 @@ elif age>=13 and age<=17:
 elif age>=18 and age<=64:
     #print(f"Your age is {age}.")
     print("You are an Adult.")
-elif age>=65 and age<=125:
+elif age>=65:
     #print(f"Your age is {age}.")
     print("You are a Senior.")
+
