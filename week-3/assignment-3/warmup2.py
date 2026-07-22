@@ -1,6 +1,5 @@
-#age = int(input("Enter your age:"))
+age = int(input("Enter your age:"))
 
-age = 54
 if age>=0 and age<=12:
     #print(f"Your age is {age}.")
     print("You are a Child.")
