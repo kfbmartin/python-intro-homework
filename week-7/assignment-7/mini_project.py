@@ -36,6 +36,6 @@ now = datetime.now()
 with open('food_report.txt', 'w') as file:
     file.write(f"\nFood Expense Report — generated {now.strftime('%B %d, %Y')}")
     for item in food_items:
-        file.write(f"\n{item['date']}: ${item['amount']}")
+        file.write(f"\n{item['date']}: ${item['amount']:.2f}")
 
-    file.write(f"\nTotal: ${total_amount_spent}")
+    file.write(f"\nTotal: ${total_amount_spent:.2f}")
