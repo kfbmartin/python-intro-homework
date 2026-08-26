@@ -43,8 +43,8 @@ else:
 
     print("=== CSV Report ===")
     print(f"{'Rows attempted:':<18}{skipped_rows_total+clean_rows_total:>5}")
-    print(f"{'Rows Parsed:':<18}{clean_rows_total:>5}")
-    print(f"{'Rows Skipped:':<18}{skipped_rows_total:>5}")
+    print(f"{'Rows parsed:':<18}{clean_rows_total:>5}")
+    print(f"{'Rows skipped:':<18}{skipped_rows_total:>5}")
     print()
 
     print("Skipped rows:")
