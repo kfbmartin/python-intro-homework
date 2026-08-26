@@ -16,6 +16,7 @@ else:
     clean_rows = []    #list to hold clean rows
 
     for row_number, row in enumerate(rows, start=1):
+
         if None in row:
             key_error_message = f"Row {row_number}: extra column detected - skipped"
             skipped_rows.append(key_error_message)
@@ -34,8 +35,8 @@ else:
             value_error_message = f"Row {row_number}: ValueError - could not convert '{row['amount']}' to float"
             skipped_rows.append(value_error_message)
 
-        except KeyError:
-            keyerror_message = f"Row {row_number}: KeyError - expected columnn missing"
+        except KeyError as error:
+            keyerror_message = f"Row {row_number}: KeyError - missing expected columnn {error}"
             skipped_rows.append(keyerror_message)
             
 
