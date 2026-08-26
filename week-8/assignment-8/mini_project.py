@@ -44,9 +44,9 @@ else:
     clean_rows_total = len(clean_rows)
 
     print("=== CSV Report ===")
-    print(f"{'Rows attempted:':<18}{skipped_rows_total+clean_rows_total:>5}")
-    print(f"{'Rows parsed:':<18}{clean_rows_total:>5}")
-    print(f"{'Rows skipped:':<18}{skipped_rows_total:>5}")
+    print(f"{'Rows attempted:':<7}{skipped_rows_total+clean_rows_total:>4}")
+    print(f"{'Rows parsed:':<15}{clean_rows_total:>4}")
+    print(f"{'Rows skipped:':<15}{skipped_rows_total:>4}")
     print()
 
     print("Skipped rows:")
