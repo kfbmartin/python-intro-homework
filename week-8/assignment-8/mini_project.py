@@ -35,16 +35,16 @@ else:
             clean_rows.append(entry)
 
         except ValueError:
-            value_error_message = f"Row {row_number}: ValueError - could not convert {row['amount']} to float"
+            value_error_message = f"Row {row_number}: ValueError - could not convert '{row['amount']}' to float"
             skipped_rows.append(value_error_message)
 
     skipped_rows_total = len(skipped_rows)
     clean_rows_total = len(clean_rows)
 
     print("=== CSV Report ===")
-    print(f"Rows attempted: {skipped_rows_total+clean_rows_total}")
-    print(f"Rows Parsed: {clean_rows_total}")
-    print(f"Rows Skipped: {skipped_rows_total}")
+    print(f"{'Rows attempted:':<18}{skipped_rows_total+clean_rows_total:>5}")
+    print(f"{'Rows Parsed:':<18}{clean_rows_total:>5}")
+    print(f"{'Rows Skipped:':<18}{skipped_rows_total:>5}")
     print()
 
     print("Skipped rows:")
