@@ -5,8 +5,6 @@
 #requests==2.34.2
 #urllib3==2.7.0
 
-with open('requirements.txt', 'r') as file:
-    for index, line in enumerate(file):
-        if index == 3:
-            print(line.strip())  # .strip() removes the newline character at the end
-            
+import requests
+
+print(f"requests version: {requests.__version__}")
