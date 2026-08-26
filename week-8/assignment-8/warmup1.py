@@ -4,6 +4,6 @@ while True:
         print(f"You entered: {number}")
         break
 
-    except ValueError as e:
+    except ValueError:
         print("That's not a valid number. Try again.")
 
