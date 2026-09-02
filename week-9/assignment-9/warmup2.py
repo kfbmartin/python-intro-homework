@@ -5,8 +5,8 @@ response_json = response.json()
 
 birthday = response_json.get("birthday", "Not available")
 
-print(f"Name: {response_json["name"]}")
-print(f"Predicted age: {response_json["age"]}")
+print(f"Name: {response_json['name']}")
+print(f"Predicted age: {response_json['age']} ")
 print(f"Birthday: {birthday}")
 
 
