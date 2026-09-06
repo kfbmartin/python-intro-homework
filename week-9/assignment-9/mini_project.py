@@ -60,36 +60,49 @@ def quit_loop():
     print("Quit Country Explorer")
     
 def main():
+
+    params = {
+            "response_fields": "names.common, capitals, region, population",
+            "limit":100,
+        }
+
+    countries = fetch_countries(params)
+
     while True: 
         result = show_menu()
         if result == "1":
             search_term = input("Please enter a search term: ")
 
-            params = {
-                "response_fields": "names.common, capitals, region, population",
-                "limit":100,
-                  "names.common":search_term
-            }
+            search_countries = []
 
-            countries = fetch_countries(params)
+            for country in countries:
+                if search_term.lower() in country["name"].lower():
+                    search_countries.append(country)
 
-            sorted_cleaned_countries = sorted(countries, key=lambda country: country["population"],reverse=True)
+            #Sort countries by population
+            sorted_search_countries = sorted(
+                search_countries, key=lambda country: country["population"], reverse=True
+            )
 
-            for country in sorted_cleaned_countries:
-                print(f"{country['name']} | Capital: {country['capitals']} | Region: {country['region']} | Population: {country['population']} ")
-            
+            for country in sorted_search_countries:
+                print(f"{country['name']} | Capital: {country['capitals']} | Region: {country['region']} | Population: {country['population']} ")              
+
         elif result == "2":
             region_name = input("Please enter the region name: ")
 
-            params = {
-                "response_fields": "names.common, capitals.name, region, population",
-                "limit":100,
-                "region":region_name
-            }
-            countries = fetch_countries(params)
+            region_countries = []
 
-            sorted_cleaned_countries = sorted(countries, key=lambda country: country["population"],reverse=True)
-            
+            #Find countries that match the search region
+            for country in countries:
+                if country["region"].lower() == region_name.lower():
+                    region_countries.append(country)
+
+            #Sort countries by population
+            sorted_cleaned_countries = sorted(
+                region_countries, key=lambda country: country["population"],
+                reverse=True
+            )
+
             for country in sorted_cleaned_countries:
                 print(f"{country['name']} | Capital: {country['capitals']} | Region: {country['region']} | Population: {country['population']} ")              
 
