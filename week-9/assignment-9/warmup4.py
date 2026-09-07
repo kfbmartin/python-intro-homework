@@ -9,7 +9,6 @@ try:
         
     else:
         data = response.json()
-        print(data)
 
         # work with data here
 except requests.exceptions.RequestException:
