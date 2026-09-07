@@ -35,7 +35,7 @@ def fetch_countries(params):
     for country in countries_list:
         cleaned.append({
             "name": country["names"]["common"],
-            "capitals": country["capitals"][0]["name"] if country.get("capitals") else "N/A",
+            "capital": country["capitals"][0]["name"] if country.get("capitals") else "N/A",
             "region": country["region"],
             "population": country["population"]
         })
@@ -85,7 +85,7 @@ def main():
             )
 
             for country in sorted_search_countries:
-                print(f"{country['name']} | Capital: {country['capitals']} | Region: {country['region']} | Population: {country['population']} ")              
+                print(f"{country['name']} | Capital: {country['capital']} | Region: {country['region']} | Population: {country['population']} ")              
 
         elif result == "2":
             region_name = input("Please enter the region name: ")
@@ -104,7 +104,7 @@ def main():
             )
 
             for country in sorted_cleaned_countries:
-                print(f"{country['name']} | Capital: {country['capitals']} | Region: {country['region']} | Population: {country['population']} ")              
+                print(f"{country['name']} | Capital: {country['capital']} | Region: {country['region']} | Population: {country['population']} ")              
 
         elif result == "3":
             quit_loop()
