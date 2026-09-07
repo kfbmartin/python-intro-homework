@@ -85,7 +85,7 @@ def main():
             )
 
             for country in sorted_search_countries:
-                print(f"{country['name']} | Capital: {country['capital']} | Region: {country['region']} | Population: {country['population']} ")              
+                print(f"{country['name']} - Capital: {country['capital']} | Region: {country['region']} | Population: {country['population']} ")              
 
         elif result == "2":
             region_name = input("Please enter the region name: ")
